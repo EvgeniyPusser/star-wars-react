@@ -82,12 +82,7 @@ nav ul {
     text-align: center;
 }
 
-/*.far-galaxy {*/
-/*    font-size: 1.8em;*/
-/*    letter-spacing: 0.1em;*/
-/*    line-height: 1.5;*/
-/*    text-align: justify;*/
-/*}*/
+
 
 .rounded-bottom-left {
     border-bottom-left-radius: 16px;
@@ -154,11 +149,7 @@ footer .button::before {
     content: none;
 }
 
-/*footer {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    background: lightyellow;*/
-/*}*/
+
 
 footer {
     display: flex;
