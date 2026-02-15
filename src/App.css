@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -66,7 +67,7 @@ nav ul {
 .right {
     float: right;
     width: 50%;
-    border: 1px solid #eedb00;
+    border: 2px solid #eedb00;
     border-radius: 0 0 16px 16px;
     margin: 0.3rem 0 0 0.6rem;
 }
@@ -81,12 +82,12 @@ nav ul {
     text-align: center;
 }
 
-.far-galaxy {
-    font-size: 1.8em;
-    letter-spacing: 0.1em;
-    line-height: 1.5;
-    text-align: justify;
-}
+/*.far-galaxy {*/
+/*    font-size: 1.8em;*/
+/*    letter-spacing: 0.1em;*/
+/*    line-height: 1.5;*/
+/*    text-align: justify;*/
+/*}*/
 
 .rounded-bottom-left {
     border-bottom-left-radius: 16px;
@@ -103,18 +104,127 @@ footer {
     position: relative;
 }
 
-footer .button {
-    position: absolute;
-    left: 25%;
-    top: 30%;
-}
 
 .button {
+    position: relative;
     display: inline-block;
-    border: 2px solid black;
-    background-color: rgba(204, 3, 35, 0.5);
+    padding: 0.5em 1em;
+    background: black;
+    color: #eedb00;
+    border-radius: 8px;
+    margin: 0.2em;
     cursor: pointer;
-    font-size: 1em;
-    padding: 0.3em 0.6em;
-    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
 }
+
+.button::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(
+            45deg,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue,
+            violet,
+            red
+    );
+    background-size: 400%;
+    animation: borderRun 6s linear infinite;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+@keyframes borderRun {
+    0% { background-position: 0 50%; }
+    100% { background-position: 400% 50%; }
+}
+
+footer .button {
+    position: static;
+    background: #800020;
+    z-index: auto;
+}
+
+footer .button::before {
+    content: none;
+}
+
+/*footer {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    background: lightyellow;*/
+/*}*/
+
+footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: lightyellow;
+    overflow: hidden;
+
+}
+
+
+
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /*background: rgba(0, 0, 0, 0.5); !* степень затемнения *!*/
+    background: linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.3));
+    z-index: 0;
+}
+
+footer > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+footer .button {
+    margin-left: 33%;
+}
+
+nav .button:nth-child(1) {
+    transform: rotate(-3deg);
+}
+
+nav .button:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+nav .button:nth-child(3) {
+    transform: rotate(-2deg);
+}
+
+nav .button:nth-child(4) {
+    transform: rotate(3deg);
+}
+
+.left-part {
+    display: inline-block;
+    transform: rotate(-5deg);
+
+    transition: transform 0.3s ease;
+}
+
+.left-part:hover {
+    transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
