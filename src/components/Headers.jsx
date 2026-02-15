@@ -1,15 +1,26 @@
+const items = [
+    {label: "Home"},
+    {label: "About me"},
+    {label: "Star Wars"},
+    {label: "Contact"}
+]
+
 const Headers = () => {
     return (
         <header>
             <nav>
                 <ul>
-                    <li className="button">Home</li>
-                    <li className="button">About me</li>
-                    <li className="button">Star Wars</li>
-                    <li className="button">Contact</li>
+                    {items.map((item, index) => (
+                    <li
+                        key = {index}
+                        className = "button"
+                        onClick={item.onClick}>
+                        {item.label}
+                    </li>
+                        ))}
                 </ul>
             </nav>
-            <h1>Luke Skywalker</h1>
+
         </header>
     )
 }
