@@ -1,9 +1,22 @@
 const items = [
-    { label: "Home", onClick: () => console.log("Home clicked") },
-    { label: "About me", onClick: () => alert("About me page") },
-    { label: "Star Wars", onClick: () => console.log("Star Wars") },
-    { label: "Contact", onClick: () => console.log("Contact") }
+    { label: "Home" },
+    { label: "About" },
+    { label: "Star Wars" },
+    { label: "Contact" }
 ];
+
+
+const actions = {
+    Home: () => console.log("Open Home"),
+    About: () => console.log("Open About"),
+    "Star Wars": () => console.log("Open Star Wars"),
+    Contact: () => console.log("Open Contact"),
+};
+
+const handleClick = (name) => {
+    actions[name]?.();
+};
+
 
 
 const Headers = () => {
@@ -15,7 +28,7 @@ const Headers = () => {
                     <li
                         key = {index}
                         className = "button"
-                        onClick={item.onClick}>
+                        onClick={() => handleClick(item.label)}>
                         {item.label}
                     </li>
                         ))}
