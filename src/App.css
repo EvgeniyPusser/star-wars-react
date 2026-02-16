@@ -8,12 +8,7 @@
   text-align: center;
 }
 
-.far-galaxy {
-    font-size: 1.8em;
-    letter-spacing: 0.1em;
-    line-height: 1.5;
-    text-align: justify;
-}
+
 
 
 
@@ -211,7 +206,111 @@ nav .button:nth-child(4) {
     transform: rotate(0deg);
 }
 
+html, body {
+    height: 100%;
+}
 
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* ===== ABOUT PAGE ===== */
+
+.about-page {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #eedb00;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 230, 0, 0.3);
+}
+
+.about-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.about-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(238, 219, 0, 0.3);
+}
+
+.about-list li:last-child {
+    border-bottom: none;
+}
+
+.far-galaxy {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+    color: #eedb00;
+    text-shadow: 0 0 8px rgba(255, 230, 0, 0.6);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0.8em auto;
+    max-width: 800px;
+    color: #f5e663;
+}
+main {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+h1, h2 {
+    color: #eedb00;
+    text-shadow:
+            0 0 5px #eedb00,
+            0 0 15px rgba(255, 230, 0, 0.6);
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 1em 0;
+}
+
+
+.far-galaxy {
+    font-size: 1.3em;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
 
 
 
