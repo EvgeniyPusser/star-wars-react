@@ -1,9 +1,10 @@
 const items = [
-    {label: "Home"},
-    {label: "About me"},
-    {label: "Star Wars"},
-    {label: "Contact"}
-]
+    { label: "Home", onClick: () => console.log("Home clicked") },
+    { label: "About me", onClick: () => alert("About me page") },
+    { label: "Star Wars", onClick: () => console.log("Star Wars") },
+    { label: "Contact", onClick: () => console.log("Contact") }
+];
+
 
 const Headers = () => {
     return (
