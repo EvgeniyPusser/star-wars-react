@@ -13,6 +13,11 @@
     letter-spacing: 0.1em;
     line-height: 1.5;
     text-align: justify;
+
+        margin-left: 0;
+        max-width: none;
+
+
 }
 
 
@@ -23,8 +28,8 @@
 
 body {
     font-family: "Poller One", sans-serif;
-    background-image: url("./assets/Images/sky.jpg");
-    color: #eedb00;
+    background-image: url("../assets/Images/sky.jpg");
+    color: #f5e663;
     background-attachment: fixed;
 }
 
@@ -202,11 +207,19 @@ nav .button:nth-child(4) {
 
 .left-part {
     display: inline-block;
-    transform: rotate(-5deg);
+    transform: rotate(-15deg);
 
     transition: transform 0.3s ease;
+
+    color: goldenrod;
+    font-size: 1.5em;
 }
 
 .left-part:hover {
     transform: rotate(0deg);
+}
+
+.right-part {
+    color: goldenrod;
+    font-size: 1.5em;
 }
