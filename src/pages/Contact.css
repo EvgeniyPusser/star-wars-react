@@ -1,0 +1,62 @@
+.contact-page {
+    min-height: 100vh;
+    padding: 60px 20px;
+    background: radial-gradient(circle at top, #111 0%, #000 70%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-card {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(255, 230, 0, 0.2);
+    text-align: center;
+}
+
+.contact-card h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow:
+            0 0 8px #eedb00,
+            0 0 20px rgba(255, 230, 0, 0.6);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #eedb00;
+    background: rgba(0, 0, 0, 0.8);
+    color: #eedb00;
+    font-size: 1em;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 230, 0, 0.6);
+}
+
+.contact-form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #eedb00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: white;
+}

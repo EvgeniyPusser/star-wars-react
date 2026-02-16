@@ -8,17 +8,7 @@
     text-align: center;
 }
 
-.far-galaxy {
-    font-size: 1.8em;
-    letter-spacing: 0.1em;
-    line-height: 1.5;
-    text-align: justify;
 
-        margin-left: 0;
-        max-width: none;
-
-
-}
 
 
 
@@ -223,3 +213,22 @@ nav .button:nth-child(4) {
     color: goldenrod;
     font-size: 1.5em;
 }
+
+.far-galaxy {
+    position: relative;
+    margin-left: 0;
+    max-width: none;
+
+    font-size: 1.6em;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    text-align: justify;
+
+    color: #eedb00;
+    text-shadow: 0 0 6px rgba(255, 230, 0, 0.6);
+
+    transform-origin: 50% 100%;
+    animation: crawl 40s linear infinite;
+}
+
+

@@ -1,0 +1,30 @@
+.about-page {
+    min-height: 100vh;
+    background: moccasin;
+    color: black;
+
+    display: flex;
+    flex-direction: column;      /* ⬅ ВАЖНО */
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 60px 20px;
+}
+
+.about-title {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.about-list {
+    max-width: 700px;
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
