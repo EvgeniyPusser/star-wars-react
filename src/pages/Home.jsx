@@ -3,6 +3,7 @@ import Heroes from "../components/Heroes";
 import Story from "../components/Story";
 import Footer from "../components/Footer";
 import Headers from "../components/Headers";
+import "./Home.css"
 
 
 const Home = () => {
