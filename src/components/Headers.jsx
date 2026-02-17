@@ -4,7 +4,8 @@ const items = [
     { label: "Home", path: "/" },
     { label: "About", path: "/About" },
     { label: "Star Wars", path: "/StarWars" },
-    { label: "Contact", path: "/Contact" }
+    { label: "Contact", path: "/Contact" },
+    { label: "Joke", path: "/Joke" },
 ];
 
 const Headers = () => {
