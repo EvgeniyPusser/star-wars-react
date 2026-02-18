@@ -17,7 +17,7 @@ const About = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("https://api.themoviedb.org/3/person/1", {
+        fetch("https://api.themoviedb.org/3/person/100", {
             headers: {
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZjc1ODg3MjQ4OGUxODkwMDhkNWUxMzE3OTgwNjE3NCIsIm5iZiI6MTc0MzAxNTY4MC4zMTUsInN1YiI6IjY3ZTQ0ZjAwOTVhNzRhZmE1YzhlN2Y5NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.h52U0xYIcIVPuuMMqT0QSAG5w2Tp8BvVgKAhLP5NlIY",
                 "Content-Type": "application/json"

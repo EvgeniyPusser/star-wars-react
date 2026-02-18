@@ -231,4 +231,9 @@ nav .button:nth-child(4) {
     animation: crawl 40s linear infinite;
 }
 
+footer::before {
+    pointer-events: none;
+}
+
+
 

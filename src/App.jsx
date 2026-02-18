@@ -22,6 +22,7 @@ function App() {
                 <Route path="/starwars" element={<StarWars />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/joke" element={<Joke />} />
+
             </Routes>
 
 
